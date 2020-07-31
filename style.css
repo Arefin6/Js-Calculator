@@ -1,82 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+*{
+ margin: 0;
+ padding: 0;	
+}
+
 body{
-	font-family: 'Open Sans',sans-serif;
-	background-color: black;
+  font-family: 'Roboto', sans-serif;		
 }
-#container{
-	width: 1000px;
-	height: 550px;
-	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/abarna-codespot/A-simple-Calculator/master/bgImg.jpg);
-	margin: 20px auto;	
+.clac-btn{
+  background-color: silver;
+  color:black;
+  width:25px;
+  height:45px;
+  border:1px solid gray;
+  text-align: center;
+  cursor: pointer;
+  font-size: 32px;
+  font-weight: 100;
+  padding-top: 3px;
+		
 }
-#calculator{
-	width: 320px;
-	height: 520px;
-	background-color: #eaedef;
-	margin: 0 auto;
-	top: 20px;
-	position: relative;
-	border-radius: 5px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.clac-btn:hover{
+	background-color: orange;
+	
 }
-#result{
-	height: 120px;
+.row{
+	display: table;
+	table-layout: fixed;
+	width: 400px;
 }
-#history{
+.column{
+	display:table-cell;
+}
+#clac-zero{
+ width:52.6777777px;
+ border:0 0 0 7px;
+	
+}
+#clac-clear{
+	 width:52.6777777px;
+}
+
+#clac-display-val{
+	height:80px;
+	color:white;
+	background-color: #383838;
 	text-align: right;
-	height: 20px;
-	margin: 0 20px;
-	padding-top: 20px;
-	font-size: 15px;
-	color: #919191;
+	border-top:1px solid gray;
+	border-left:1px solid gray;
+	border-right:1px solid gray;
+	font-size: 48px;
+	overflow: hidden;
+	white-space: nowrap;
+	padding: 12px;
+	border-radius: 7px 7px 0 0;
+		
 }
-#output{
-	text-align: right;
-	height: 60px;
-	margin: 10px 20px;
-	font-size: 30px;
+
+.clac-btn-operator{
+	background-color: orange;
+	color:white;
+	
 }
-#keyboard{
-	height: 400px;
+h1{
+	text-align: center;
+	margin-top:50px;
+	margin-bottom: 30px;
+	
 }
-.operator, .number, .empty{
-	width: 50px;
-	height: 50px;
-	margin: 15px;
-	float: left;
-	border-radius: 50%;
-	border-width: 0;
-	font-weight: bold;
-	font-size: 15px;
+#clac-equal{
+  border-radius:0 0 7px 0;
+	
 }
-.number, .empty{
-	background-color: #eaedef;
+#clac-parent{
+  margin-left:calc(50% - 200px);
+	
 }
-.number, .operator{
-	cursor: pointer;
+.clac-numbers{
+	
 }
-.operator:active, .number:active{
-	font-size: 13px;
-}
-.operator:focus, .number:focus, .empty:focus{
-	outline: 0;
-}
-button:nth-child(4){
-	font-size: 20px;
-	background-color: #20b2aa;
-}
-button:nth-child(8){
-	font-size: 20px;
-	background-color: #ffa500;
-}
-button:nth-child(12){
-	font-size: 20px;
-	background-color: #f08080;
-}
-button:nth-child(16){
-	font-size: 20px;
-	background-color: #7d93e0;
-}
-button:nth-child(20){
-	font-size: 20px;
-	background-color: #9477af;
-}
+
